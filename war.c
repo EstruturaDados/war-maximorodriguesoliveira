@@ -56,7 +56,7 @@ int main() {
             scanf("%s", territorios[i].cor);
 
             printf("Quantidade de Tropas: ");
-            scanf("%d", territorios[i].tropas);
+            scanf("%d", &territorios[i].tropas);
 
             printf("\n");
         }
@@ -64,7 +64,7 @@ int main() {
     printf("======================================================\n");
     printf("Territórios Cadastrados:\n\n");
 
-    for (int i = 0, i < 5; i++)
+    for (int i = 0; i < 5; i++)
         {
         printf("Território %d:\n", i+1);
         printf("Nome: %s\n", territorios[i].nome);
